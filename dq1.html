@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <p>Ques1.What is action attribute in form used for?</p>
+        <select>
+            <option value="0">Select..</option>
+            <option value="1">a) It specifies the URL to which the form data will be sent when submitted.</option>
+            <option value="2">b) It specifies the method used to send form data (GET or POST).</option>
+            <option value="3">c) It specifies the character set used for encoding the form data.</option>
+            <option value="4">d) It specifies the target window or frame where the response will be displayed.</option>
+            
+        </select>
+    </fieldset>
+</form>
+   <input type="submit" value="Next" onclick="validateAnswer()">
+
+   <script>
+    function validateAnswer() {
+        const select = document.querySelector('select');
+        const selectedValue = select.value;
+        if (selectedValue === "1") {
+         alert("Correct answer!");
+         window.location.href = "dq2.html";
+        } else {
+         alert("Incorrect answer. Please try again.");
+        }
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <form>
+        <fieldset><h2>Feedback Form</h2></fieldset>
+        <fieldset>
+            <p>
+                Customer:<select name="customer" id="customer">
+                <option value="Customer_1">Customer_1</option>
+                <option value="Customer_2">Customer_2</option>
+                <option value="Customer_3">Customer_3</option>
+            </select>
+        </p>
+        <p>
+            Product:<select name="product" id="product">
+                    <option value="Product_1">Product_1</option>
+                    <option value="Product_2">Product_2</option>
+                    <option value="Product_3">Product_3</option>
+                </select>
+            </p>
+            <p>
+            Rating:<select name="rating" id="rating">
+                    <option value="5 star">5 star</option>
+                    <option value="4 star">4 star</option>
+                    <option value="3 star">3 star</option>
+                    <option value="2 star">2 star</option>
+                    <option value="1 star">1 star</option>
+                </select>
+            </p>
+        </fieldset>
+        <input type="button" value="Submit" onclick="javascript:alert('Customer: ' + document.getElementById('customer').value + '\nProduct: ' + document.getElementById('product').value + '\nRating: ' + document.getElementById('rating').value)" >
+    </form>
+</body>
+</html>

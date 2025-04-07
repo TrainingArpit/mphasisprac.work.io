@@ -1,0 +1,25 @@
+.header{
+    background-color: #caccce;
+    padding: 20px;
+    
+    
+}
+.navbar{
+    background-color: #c1c7ce;
+    display:inline-block;
+    width: 250px; 
+    margin: 5px;   
+}
+.content{
+    margin-top:30px;
+    display: inline-block;
+    background-color: #ffffff;
+    height:50px
+    
+}
+.footer{
+    background-color: #c9cdd1;
+    margin-top: 5px;
+    padding:5px;
+    text-align: center;
+}

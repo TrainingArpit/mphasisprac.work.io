@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style="text-align: center;" ><!--  method="get/post" -->
+    <header>
+        <fieldset >
+           <div> <h1 style="text-align: center;">Personal Data</h1></div> 
+        </fieldset>
+    </header>
+    <section>
+        <fieldset>
+    <article style="display:inline-block ;">
+        <fieldset>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            <label for ="age" >Age:</label>
+            <input type="text" id="age" name="Age" placeholder="Enter your age"><br><br>
+            <label for ="email" >Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+            <input type="submit" value="Show data">
+            <script>
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevents form submission to the server
+                    const name = document.getElementById('name').value;
+                    const age = document.getElementById('age').value;
+                    const email = document.getElementsByName('email')[0].value;
+
+                    // Store data in localStorage
+                    localStorage.setItem('name', name);
+                    localStorage.setItem('age', age);
+                    localStorage.setItem('email', email);
+
+                    // Redirect to display.html
+                    window.location.href = 'display.html';
+                });
+            </script>
+        </fieldset>
+    </article>
+    
+    </fieldset>
+    </section>
+</form>
+</body>
+</html>
